@@ -32,7 +32,7 @@ class App
     dotenv.config();
 
     const rootDir = path.dirname(require.main.filename) + "/../";
-    this.app.use('/', express.static(rootDir + 'assets/public'));
+    this.app.use('/', express.static(rootDir + 'public'));
     this.app.use('/docs', express.static(rootDir + 'docs'));
 
     //API version initialization

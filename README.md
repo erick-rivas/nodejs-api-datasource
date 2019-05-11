@@ -104,8 +104,6 @@ In general terms, the architecture uses the following structure:
  ```bash
  $ npm run-script debug
  ```
-
-
  ### To generate documentation
 
  * Install apidoc.

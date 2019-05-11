@@ -1,6 +1,7 @@
 # General (include .env)
 dist
 debug.ts
+public/res/*
 
 # Logs
 logs
