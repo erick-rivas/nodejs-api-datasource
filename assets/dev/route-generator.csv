@@ -1,0 +1,13 @@
+class,name,method,params
+Match,/matches,GET,team_id
+Match,/matches/:id,DELETE,
+Match,/matches/:id,PUT,type
+Match,/matches,POST,"date	type	visitor_id	local_id"
+Player,/players/top,GET,
+Player,/players,GET,team_id
+Player,/players/:id,PUT,team_id
+Score,/scores,POST,"min	match_id	player_id"
+Team,/teams/:id,GET,
+Team,/teams,GET,user_id
+User,/users/auth,GET,"email	password"
+User,/users/:id,GET,

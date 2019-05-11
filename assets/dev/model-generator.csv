@@ -1,0 +1,17 @@
+class_name,attribute,type,description,class_level,collection
+Match,date,Date,,1,
+Match,type,MType,_CONST,1,"[LEAGUE, CUP, FRIENDLY]"
+Match,visitor,Team,_MODEL,1,
+Match,local,Team,_MODEL,1,
+Match,scores,Score[],_MODEL,1,
+Player,name,string,name,1,
+Player,photo_url,string,imageUrl,1,
+Player,team_id,number,,1,
+Score,min,number,,1,
+Score,match_id,number,,1,
+Score,player,Player,_MODEL,1,
+Team,name,string,name,1,
+Team,logo_url,string,imageUrl,1,
+Team,players,Player[],_MODEL,1,
+User,email,string,email,1,
+User,password,string,,1,

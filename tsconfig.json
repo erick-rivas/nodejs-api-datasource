@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"es5",
+			"es6",
+			"dom"
+		],
+		"rootDir": "./",
+		"outDir": "./dist",
+		"sourceMap": true,
+		"baseUrl": ".",
+		"paths": {
+			"@v1/*": [
+				"src/v1/*"
+			],
+			"@support/*": [
+				"src/support/*"
+			],
+			"@util/*": [
+				"src/util/*"
+			]
+		}
+	},
+	"exclude": [
+		"./node_modules",
+		"./docs",
+		"./assets"
+	]
+}
