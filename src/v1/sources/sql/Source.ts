@@ -1,7 +1,6 @@
-import Repository from "@v1/sources/Sql";
 import Executor from "@v1/sources/sql/Executor";
 
-class Source extends Executor implements Repository
+class Source extends Executor
 {
   private static instance: Source;
   private constructor() { super(); }

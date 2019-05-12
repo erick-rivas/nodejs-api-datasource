@@ -37,7 +37,7 @@ export class Resources
   {
 
     /**
-    * @api {post} /v1/resources Save a file
+    * @api {post} /1/resources Save a file
     * @apiName SaveFile
     * @apiGroup Resources
     * @apiVersion 1.0.0

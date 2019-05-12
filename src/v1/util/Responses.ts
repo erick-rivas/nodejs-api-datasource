@@ -35,6 +35,32 @@ class Responses
     res.send(JSON.stringify(result ? result : {}));
   }
 
+
+  /**
+  * Send result
+  */
+
+  static sendResult(res: Response, value: any, key?: string, request?: any)
+  {
+    res.setHeader("Content-Type", "application/json");
+    let result = {}
+    result[key ? key : "res"] = value
+    if (request != null) result["req"] = request
+    res.send(JSON.stringify(result));
+  }
+
+  /**
+  * Send fileName
+  */
+
+  static sendFileName(res: Response, fileName: string, request?: any)
+  {
+    return Responses.sendResult(res,
+      process.env.HOST_NAME + "/res/" + fileName, "url", request)
+  }
+
+
+
   /**
   * Redirect to a relative url
   */

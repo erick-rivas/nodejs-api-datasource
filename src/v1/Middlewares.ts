@@ -1,5 +1,4 @@
 import { Router } from "express";
-import Factory from "@v1/middlewares/Factory";
 import Authentication from "@v1/middlewares/Authentication";
 
 class Middlewares
@@ -10,7 +9,7 @@ class Middlewares
   constructor()
   {
     this.router = Router();
-    this.auth = Factory.createAuthentication();
+    this.auth = new Authentication();
   }
 
   init(): Router

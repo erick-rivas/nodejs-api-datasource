@@ -36,7 +36,7 @@ class App
     this.app.use('/docs', express.static(rootDir + 'docs'));
 
     //API version initialization
-    this.app.use("/v1", new v1().init());
+    this.app.use("/1", new v1().init());
 
 
     const port = this.normalizePort(process.env.PORT || "4004");

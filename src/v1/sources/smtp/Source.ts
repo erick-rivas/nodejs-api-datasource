@@ -1,9 +1,8 @@
-import Repository from "@v1/sources/Smtp";
 import Executor from "./Executor";
 
-class Source extends Executor implements Repository
+class Source extends Executor
 {
-  sendEmail(args: { to: string[], content: string, subject: string, attachmentUrls?: string[] }): Promise<boolean>
+  sendEmail(args: { to: string[], subject: string, content: string, attachmentUrls?: string[] }): Promise<boolean>
   {
     return this.exec(
       args.to,

@@ -1,7 +1,6 @@
-import Repository from "@v1/sources/Recaptcha";
 import Executor from "./Executor";
 
-class Source extends Executor implements Repository
+class Source extends Executor
 {
   async verify(response: string): Promise<boolean>
   {

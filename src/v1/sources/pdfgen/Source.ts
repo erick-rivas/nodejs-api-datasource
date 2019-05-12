@@ -1,7 +1,6 @@
 import Executor from "./Executor";
-import Repository from "@v1/sources/PdfGen";
 
-class Source extends Executor implements Repository
+class Source extends Executor
 {
   generate(data: string): Promise<string>
   {
