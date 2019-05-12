@@ -37,22 +37,24 @@ export class Resources
   {
 
     /**
-    * @api {post} /1/resources Save a file
+    * @api {post} /1/files Save a file
     * @apiName SaveFile
-    * @apiGroup Resources
+    * @apiGroup Files
     * @apiVersion 1.0.0
     * 
     * @apiParam {Object} file File data.
     * @apiSampleRequest off
     * @apiSuccess {String} url File path.
+    * @apiSuccessExample {json} Success-Response:
+    *     HTTP/1.1 200 OK
+    *     {
+    *       "url": "http://localhost/res/file.jpg"
+    *     }
     */
 
-    this.router.post("/resources", upload.single("file"), (req, res) =>
+    this.router.post("/files", upload.single("file"), (req, res) =>
     {
-      let result = {
-        url: `http://${req.get("host")}/resources/${req.file.filename}`
-      }
-      return Res.sendObject(res, result);
+      return Res.sendFileName(res, req.file.filename);
     });
 
     return this.router;
