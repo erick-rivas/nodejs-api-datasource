@@ -11,7 +11,7 @@ var upload = multer({
       destination: function (req, file, cb)
       {
         const rootDir = path.dirname(require.main.filename) + "/../";
-        cb(null, rootDir + 'assets/public/resources')
+        cb(null, rootDir + 'public/res')
       },
       filename: function (req, file, cb)
       {
