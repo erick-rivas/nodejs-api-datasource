@@ -172,6 +172,12 @@ $ sudo ./certbot-auto certonly --debug
 ```
 * Set HTTPS_DOMAIN in .ebextensions/nodecommands.config
 
+### Configure environment variables
+
+* Set HOST_NAME in .env
+
+
+
 ### Deploy
 
  * Deploy to aws

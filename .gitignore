@@ -3,6 +3,7 @@
 dist
 debug.ts
 public/res/*
+!public/res/.gitignore
 
 # Logs
 logs
