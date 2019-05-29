@@ -1,11 +1,17 @@
 require("module-alias/register");
 import * as dotenv from "dotenv";
+import * as path from "path";
 
 class Debug
 {
   constructor()
   {
-    dotenv.config();
+    const rootDir = path.dirname(require.main.filename) + "/../";
+    const isDebug = process.env.IS_DEBUG == null ||
+      process.env.IS_DEBUG.toLowerCase() == "true";
+    dotenv.config({
+      path: rootDir + (isDebug ? ".env.dev" : ".env.prod")
+    });
   }
 
   async main(): Promise<any>

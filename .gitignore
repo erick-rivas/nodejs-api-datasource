@@ -1,5 +1,6 @@
 # General
-.env
+.env.prod
+.env.dev
 dist
 debug.ts
 public/res/*

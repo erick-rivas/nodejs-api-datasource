@@ -29,9 +29,13 @@ class App
     this.app.use(bodyParser.urlencoded({
       extended: true
     }));
-    dotenv.config();
-
     const rootDir = path.dirname(require.main.filename) + "/../";
+    const isDebug = process.env.IS_DEBUG == null ||
+      process.env.IS_DEBUG.toLowerCase() == "true";
+    dotenv.config({
+      path: rootDir + (isDebug ? ".env.dev" : ".env.prod")
+    });
+
     this.app.use('/', express.static(rootDir + 'public'));
     this.app.use('/docs', express.static(rootDir + 'docs'));
 
