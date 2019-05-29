@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Controllers from "@v1/Controllers";
+import Controllers from "@lt/Controllers";
 
 class Routes
 {

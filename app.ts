@@ -58,9 +58,9 @@ class App
 
 //Latest (v1)
 
-import Routes from "@v1/Routes";
-import Resources from "@v1/Resources";
-import Middlewares from "@v1/Middlewares";
+import Routes from "@lt/Routes";
+import Resources from "@lt/Resources";
+import Middlewares from "@lt/middlewares";
 
 class v1
 {

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Authentication from "@v1/middlewares/Authentication";
+import Authentication from "@lt/middlewares/Authentication";
 
 class Middlewares
 {

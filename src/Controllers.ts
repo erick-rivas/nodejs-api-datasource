@@ -1,10 +1,10 @@
 
 import { Request, Response } from "express";
-import Res from "@v1/util/Responses"
+import Res from "@util/Responses"
 
-import PdfGen from "@v1/sources/pdfgen/Source";
-import QrGen from "@v1/sources/qrgen/Source";
-import Smtp from "@v1/sources/smtp/Source";
+import PdfGen from "@lt/sources/pdfgen/Source";
+import QrGen from "@lt/sources/qrgen/Source";
+import Smtp from "@lt/sources/smtp/Source";
 
 class Controllers
 {

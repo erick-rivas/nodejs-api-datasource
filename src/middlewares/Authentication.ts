@@ -1,5 +1,5 @@
 import { Request, Response, Next } from "express";
-import Res from "@v1/util/Errors";
+import Res from "@util/Errors";
 
 class Authentication
 {

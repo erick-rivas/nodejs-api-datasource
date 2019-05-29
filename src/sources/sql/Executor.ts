@@ -1,5 +1,5 @@
 import * as mysql from "mysql";
-import { Pair } from "@v1/util/Util";
+import { Pair } from "@util/Util";
 
 /**
  * Base class to handle common database operations.

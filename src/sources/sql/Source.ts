@@ -1,4 +1,4 @@
-import Executor from "@v1/sources/sql/Executor";
+import Executor from "@lt/sources/sql/Executor";
 
 class Source extends Executor
 {
